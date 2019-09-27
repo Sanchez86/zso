@@ -12,7 +12,7 @@
 }
 
 body {
-	font-size: 16px;
+	font-size: $default-font-size;
 	min-width: 320px;
 	position: relative;
 	line-height: 1.65;
@@ -48,16 +48,44 @@ body {
 b, strong {
 	font-weight: bold;
 }
-main, header{
-	padding: 50px;
-}
 
 header{
 
 }/*header*/
 
-.slider{
+nav{
+	background-color: rgba(255, 255, 255, 0.58);
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.16);
+	.navbar-nav{
+		a{
+			color: #252525;
+			position: relative;
+			&:after{
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 3px;
+				background-color: #32609E;
+				width: 0;
+				transition: width .5s;
+			}
+			&:hover{
+				color: #252525;
+				text-decoration: none;
+				&:after{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
 
+.slider{
+	.blue-block{
+		background-color: #D5E3EE;
+		height: 500px;
+	}
 }/*.slider*/
 
 .description-product{

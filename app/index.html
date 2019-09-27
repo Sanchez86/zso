@@ -21,7 +21,7 @@
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
-
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -29,39 +29,66 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-md fixed-top">
-			<a class="navbar-brand" href="#">
-				<img class="logo" src="img/_src/logo.png" alt="logo">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+			<div class="container">
+				<a class="navbar-brand" href="#">
+					<img class="logo" src="img/_src/logo.png" alt="logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">O ZAKŁADACH</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">PROTETYKA</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">ORTOTYKA</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">KALEOTYKA I OBUWIE ORTOPEDYCZNE</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">GORSETY I ORTEZY</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">WÓZKI, KULE I BALKONIKI</a>
-					</li>
-				</ul>
+				<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">O ZAKŁADACH</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">PROTETYKA</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">ORTOTYKA</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">KALEOTYKA I OBUWIE ORTOPEDYCZNE</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">GORSETY I ORTEZY</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">WÓZKI, KULE I BALKONIKI</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	</header>
 	<main>
-		<section class="slider"></section><!--.slider-->
+		<section class="slider">
+			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="blue-block"></div>
+						<!--img src="..." class="d-block w-100" alt="..."-->
+					</div>
+					<div class="carousel-item">
+						<div class="blue-block"></div>
+						<!--img src="..." class="d-block w-100" alt="..."-->
+					</div>
+					<div class="carousel-item">
+						<div class="blue-block"></div>
+						<!--img src="..." class="d-block w-100" alt="..."-->
+					</div>
+				</div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</section><!--.slider-->
 		<section class="description-product"></section><!--.description-product-->
 		<section class="carousel carousel-prosthesis"></section><!--.carousel .carousel-prosthesis-->
 		<section class="description-product"></section><!--.description-product-->
@@ -73,6 +100,8 @@
 	<footer>
 
 	</footer>
+	<script src="libs/jquery/dist/jquery.min.js"></script>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 
 </body>
