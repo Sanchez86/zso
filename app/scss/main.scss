@@ -54,7 +54,41 @@ p{
 	font-size: 14px;
 	font-weight: 100;
 }
-
+h2{
+	color: #252525;
+	font-size: 16px;
+	font-weight: 100;
+}
+h3{
+	color: $text-blue;
+	font-size: 28px;
+	font-weight: 100;
+}
+.for-links{
+	a{
+		color: #252525;
+		position: relative;
+		margin-left: 1.3vw;
+		margin-right: 1.6vw;
+		&:after{
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 3px;
+			background-color: $text-blue;
+			width: 0;
+			transition: width .5s;
+		}
+		&:hover{
+			color: #252525;
+			text-decoration: none;
+			&:after{
+				width: 100%;
+			}
+		}
+	}
+}
 header{
 
 }/*header*/
@@ -63,29 +97,7 @@ nav{
 	background-color: rgba(255, 255, 255, 0.58);
 	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.16);
 	.navbar-nav{
-		a{
-			color: #252525;
-			position: relative;
-			margin-left: 1.3vw;
-			margin-right: 1.6vw;
-			&:after{
-				content: "";
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				height: 3px;
-				background-color: #32609E;
-				width: 0;
-				transition: width .5s;
-			}
-			&:hover{
-				color: #252525;
-				text-decoration: none;
-				&:after{
-					width: 100%;
-				}
-			}
-		}
+
 	}
 }
 
@@ -147,7 +159,7 @@ nav{
 		z-index: 1;
 	}
 	&__h2{
-		color: #32609e;
+		color: $text-blue;
 		font-size: 48px;
 		font-weight: 100;
 		line-height: 1.1;
@@ -199,10 +211,10 @@ nav{
 			border-radius: 100%;
 			margin-left: 7px;
 			background-color: rgba(0, 0, 0, 0);
-			border: 1px solid #32609E;
+			border: 1px solid $text-blue;
 		}
 		li.active{
-			background-color: #32609E;
+			background-color: $text-blue;
 			width: 9px;
 			height: 9px;
 			position: relative;
@@ -293,16 +305,18 @@ nav{
 }/*.slider*/
 
 .description-product{
-	&__h2{
-		color: #252525;
-		font-size: 16px;
-		font-weight: 100;
-	}
-	&__h3{
-		color: #32609E;
-		font-size: 38px;
-		font-weight: 100;
-	}
+   &__h2{
+      margin-top: 23px;
+   }
+   &__h3{
+      font-size: 38px;
+      margin-top: 15px;
+   }
+   p{
+      margin-top: 35px;
+      max-width: 380px;
+      line-height: 1.5;
+   }
 
 	&__btn{
 		color: #000000;
@@ -316,15 +330,145 @@ nav{
 		text-align: center;
 		letter-spacing: 2px;
 		transition: .5s;
+        margin-top: 62px;
 		&:hover{
 			text-decoration: none;
 			color: #FFFFFF;
 			background-color: #000000;
 		}
 	}
-}/*.description-product*/
+	.product-images{
+		padding-left: 110px;
+		display: flex;
+		.img{
+			position: relative;
+			img{
+				position: absolute;
+			}
+		}
+		.img:nth-child(1){
+			width: 244px;
+			height: 360px;
+			border: 6px solid $text-blue;
+			img{
+				top:0;
+				bottom:0;
+				right: 0;
+				margin: auto;
+			}
+		}
+		.img:nth-child(2){
+			width: 244px;
+			height: 251px;
+			position: relative;
+			left: -4px;
+			top: 195px;
+			background-color: $text-blue;
+			img{
+				bottom:0;
+				left: 0;
+				right: 0;
+				margin: 0 auto;
+			}
+		}
+       .img:nth-child(3){
+          width: 200px;
+          height: 182px;
+          position: relative;
+          top: 11px;
+          border: 6px solid $text-blue;
+          img{
+             bottom:0;
+             left: 0;
+             right: 0;
+             margin: 0 auto;
+          }
+       }
+	}
+}
+.desc-1{
+   padding-top: 122px;
+   padding-bottom: 215px;
+}
+.desc-2{
+   padding-top: 103px;
+   padding-bottom: 215px;
+   .product-images{
+      padding-top: 128px;
+   }
+}
+/*.description-product*/
 
 .carousel{
+	&__h2{
+		text-align: center;
+	}
+	&__h3{
+		text-align: center;
+		max-width: 500px;
+		margin: 10px auto 112px auto;
+	}
+	.owl-carousel{
+		.item{
+			text-align: center;
+		}
+		a{
+			text-align: center;
+			color: $text-blue;
+			font-size: 18px;
+			display: block;
+			padding-bottom: 10px;
+			span{
+				display: block;
+			}
+		}
+		img{
+			display: inline-block;
+			width: auto;
+			height: auto;
+		}
+	}
+	.owl-stage-outer{
+		z-index: 1;
+	}
+	.owl-nav{
+		position: absolute;
+        top: calc(50% - 80px);
+		width: 100%;
+		left: 0;
+		right: 0;
+		z-index: 0;
+	}
+	.owl-prev,
+	.owl-next{
+       position: absolute;
+       outline: none;
+       span{
+          color: rgba(255, 255, 255, 0);
+          display: block;
+          text-align: center;
+          opacity: .5;
+          border: 1px solid $text-blue;
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          background-repeat: no-repeat;
+          background-size: 12px;
+          background-position: center;
+       }
+	}
+	.owl-prev{
+		left: -109px;
+       span{
+          background-image: url('../img/_src/arrow-left-blue.png');
+       }
+	}
+	.owl-next{
+		right: -109px;
+       span{
+          background-image: url('../img/_src/arrow-right-blue.png');
+       }
+	}
 
 }/*.carousel*/
 
@@ -341,7 +485,20 @@ nav{
 }/*.carousel-equipment*/
 
 .gallery{
-
+   &__img{
+      width: 100%;
+   }
+   &__hover{
+      border: 6px solid $text-blue;
+      background-color: rgba(255, 255, 255, 0.58);
+      position: absolute;
+      z-index: 1;
+      p{
+         color: $text-blue;
+         font-size: 31px;
+         text-transform: uppercase;
+      }
+   }
 }/*.gallery*/
 
 .contact-form{
