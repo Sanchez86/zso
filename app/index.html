@@ -67,7 +67,7 @@
 			<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<div class="blue-block"></div>
+						<div class="blue-block blue-block-img"></div>
 						<div class="container block-for-contents">
 							<div class="row">
 								<div class="col">
@@ -472,7 +472,7 @@
                     <div class="col-md-12 contact__bg1">
                         <div class="contact__bg2">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-md-6 offset-lg-1 col-lg-6">
                                     <div class="contact__left">
                                         <h2 class="contact__h2">
                                             FORMULARZ KONTAKTOWY
@@ -492,42 +492,46 @@
                                             </div>
                                             <div>
                                                 <input type="checkbox" id="checkbox" />
-                                                <label for="checkbox">
-                                                    I hereby give consent for my personal data included in my application to be processed by ROGO I hereby give consent for my personal data included in my application to be processed by ROGO I hereby give consent for my personal data included in my application to be processed by ROGO
-                                                    I hereby give consent for my personal data included in my application to be processed by ROGO
-                                                    I hereby give consent for my personal data included in my application to be processed by ROGO
+                                                <div>
+                                                    <label for="checkbox" class="checkbox-label">
+                                                        I hereby give consent for my personal data included in my application to be processed by ROGO I hereby give consent for my personal data included in my application to be processed by ROGO I hereby give consent for my personal data included in my application to be processed by ROGO
+                                                        I hereby give consent for my personal data included in my application to be processed by ROGO
+                                                        I hereby give consent for my personal data included in my application to be processed by ROGO
 
-                                                </label>
+                                                    </label>
+                                                </div>
                                             </div>
-                                            <input type="submit" value="WYSLIJ" />
+                                            <input  type="submit" value="WYSLIJ" class="submit" /> <!--disabled="disabled"-->
                                         </form>
                                     </div><!--.contact__left-->
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-6 col-lg-4">
                                     <div class="contact__right">
                                         <h2 class="contact__h2">
                                             DANE KONTAKTOWE
                                         </h2>
-                                        <p>
+                                        <p class="contact__p">
                                             Zakłady Sprzętu Ortopedycznego
                                             Samodzielny Publiczny ZOZ
                                         </p>
                                         <div>
-                                            <div>
-                                                <span>
-                                                    ul. Poświęcka 8
-                                                </span>
-                                                <span>
-                                                    51-128 Wrocław
-                                                </span>
-                                            </div>
+                                            <h3 class="contact__h3">
+                                                ul. Poświęcka 8
+                                                51-128 Wrocław
+                                            </h3>
                                             <ul>
-                                                <li>Tel.: (71) 352 94 59</li>
-                                                <li>Tel. kom.: 667 67 37 67</li>
-                                                <li>Tel. kom.: 724 67 37 67 - protetyk</li>
+                                                <li>
+                                                    <a href="tel:+0000000">Tel.: (71) 352 94 59</a>
+                                                </li>
+                                                <li>
+                                                    <a href="tel:+0000000">Tel. kom.: 667 67 37 67</a>
+                                                </li>
+                                                <li>
+                                                    <a href="tel:+0000000">Tel. kom.: 724 67 37 67 - protetyk</a>
+                                                </li>
                                             </ul>
                                             <div>
-                                                ortopedyczne@epoczta.pl
+                                                <a href="mailto:ortopedyczne@epoczta.pl" class="form-link">Ortopedyczne@epoczta.pl</a>
                                             </div>
                                         </div>
                                     </div><!--.contact__right-->
@@ -539,8 +543,70 @@
             </div>
         </section><!--.contact-form-->
 	</main>
-	<footer>
-
+	<footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 offset-lg-1 col-lg-3">
+                    <div class="footer__left">
+                        <h2>
+                            Zakłady Sprzętu Ortopedycznego
+                            Samodzielny Publiczny ZOZ
+                        </h2>
+                        <h3>
+                            ul. Poświęcka 8
+                            51-128 Wrocław
+                        </h3>
+                        <table>
+                            <tr>
+                                <td>Tel.</td>
+                                <td>(71)3529459</td>
+                            </tr>
+                            <tr>
+                                <td>Tel. kom.:</td>
+                                <td>667 67 37 67</td>
+                            </tr>
+                            <tr>
+                                <td>Tel. kom.:</td>
+                                <td>724 67 37 67 - protetyk</td>
+                            </tr>
+                        </table>
+                        <div>
+                            <a href="ortopedyczne@epoczta.pl">Ortopedyczne@epoczta.pl</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer__center">
+                        <h2>Mapa strony</h2>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">O ZAKŁADACH</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PROTETYKA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ORTOTYKA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">KALEOTYKA I OBUWIE ORTOPEDYCZNE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">GORSETY I ORTEZY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">WÓZKI, KULE I BALKONIKI</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="footer__right">
+                        <span style="color:#fff">Google map</span>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</footer>
 	<script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/bootstrap/bootstrap.min.js"></script>

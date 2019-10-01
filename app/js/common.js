@@ -59,5 +59,15 @@ $(document).ready(function () {
                 }
             }
         });
+
+        //for header
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 0) {
+                $('nav').addClass('active');
+            }else{
+                $('nav').removeClass('active');
+            }
+        });
+
     })(jQuery); //.owl-carousel
 });
