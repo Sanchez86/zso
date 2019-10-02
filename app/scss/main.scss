@@ -862,14 +862,14 @@ nav.fixed-top.active{
 /*---End--Zaklady-----*/
 
 /*---------protez-----*/
-.protez{
+.modifier{
+	.blue-text{
+		margin-top: 140px;
+		color: $text-blue;
+		font-size: 18px;
+	}
 	.desc-4{
 		padding-bottom: 83px;
-		.blue-text{
-			margin-top: 140px;
-			color: $text-blue;
-			font-size: 18px;
-		}
 		.product-images{
 			margin-top: 23px;
 			padding-left: 0;
@@ -893,6 +893,7 @@ nav.fixed-top.active{
 			color: $black;
 			line-height: 2;
 			position: relative;
+			font-weight: 100;
 			&:before{
 				content: "";
 				position: absolute;
@@ -920,6 +921,65 @@ nav.fixed-top.active{
 /*---End--protez-----*/
 
 
+/*-----orthopedics-----*/
+
+.ortoped{
+	&__desc{
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $text-blue;
+		margin-top: 202px;
+		padding: 48px 10px;
+		h2{
+			color: $white;
+			font-size: 18px;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 44px;
+		}
+		p{
+			color: $white;
+			font-size: 18px;
+			text-align: center;
+		}
+	}
+	.blue-section{
+		h4{
+			margin-top: 77px;
+			margin-bottom: 48px;
+			max-width: 280px;
+		}
+		h6{
+			margin-top: 4px;
+		}
+	}
+	.gallery{
+		padding-top: 62px;
+	}
+}
+.desc-6{
+	padding-bottom: 201px;
+	.product-images{
+		margin-top: 428px;
+		padding-left: 0;
+	}
+}
+.dp-modify{
+	padding-bottom: 134px;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+
+/*---End--orthopedics-----*/
 @import "media"; // Always at the end
