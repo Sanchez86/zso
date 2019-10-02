@@ -46,6 +46,40 @@ body {
 	text-align: center;
 }
 
+#top {
+	z-index: 100;
+	bottom: 100px;
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: $text-blue;
+	text-align: center;
+	border: 1px solid $white;
+	transition: .5s;
+	i{
+		display: block;
+		width: 12px;
+		height: 20px;
+		background-image:url("../img/_src/arrow-right.png");
+		transform: rotateZ(-90deg);
+		background-position: center;
+		background-size: contain;
+		margin: auto;
+		margin-top: 12px;
+	}
+}
+
+#top:hover {
+	border-color: $text-blue;
+	background-color: $white;
+	i{
+		background-image:url("../img/_src/arrow-right-blue.png");
+	}
+}
+
 b, strong {
 	font-weight: bold;
 }
@@ -61,7 +95,17 @@ h2{
 }
 h3{
 	color: $text-blue;
+	font-size: 32px;
+	font-weight: 100;
+}
+h4{
+	color: $text-blue;
 	font-size: 28px;
+	font-weight: 400;
+}
+h6{
+	color: $text-blue;
+	font-size: 18px;
 	font-weight: 100;
 }
 .center{
@@ -83,7 +127,6 @@ h3{
 			width: 0;
 			transition: width .5s;
 		}
-		&.active,
 		&:hover{
 			color: #252525;
 			text-decoration: none;
@@ -92,6 +135,9 @@ h3{
 			}
 		}
 	}
+}
+.for-links .active a:after{
+	width: 100%;
 }
 header{
 
@@ -532,7 +578,7 @@ nav.fixed-top.active{
 .carousel-equipment{
    padding-top: 135px;
    .img-wrap{
-      height: 250px;
+      height: 200px;
    }
 }/*.carousel-equipment*/
 .img-wrap{
@@ -813,8 +859,65 @@ nav.fixed-top.active{
 		z-index: -1;
 	}
 }
-
 /*---End--Zaklady-----*/
+
+/*---------protez-----*/
+.protez{
+	.desc-4{
+		padding-bottom: 83px;
+		.blue-text{
+			margin-top: 140px;
+			color: $text-blue;
+			font-size: 18px;
+		}
+		.product-images{
+			margin-top: 23px;
+			padding-left: 0;
+		}
+	}
+	h4{
+		margin-top: 157px;
+		margin-bottom: 102px;
+	}
+	h6{
+		border-bottom: 1px solid $text-blue;
+		padding-bottom: 7px;
+		padding-left: 20px;
+		margin-top: 75px;
+
+	}
+	ul{
+		margin-top: 25px;
+		list-style-type: none;
+		li{
+			color: $black;
+			line-height: 2;
+			position: relative;
+			&:before{
+				content: "";
+				position: absolute;
+				top: 15px;
+				left: -11px;
+				width: 4px;
+				height: 1px;
+				background-color: $black;
+			}
+		}
+	}
+}
+.blue-section{
+	background-color: #D5E3EE;
+	padding-top: 19px;
+	padding-bottom: 65px;
+}
+.desc-5{
+	padding-bottom: 150px;
+	.product-images{
+		margin-top: 103px;
+		padding-left: 0;
+	}
+}
+/*---End--protez-----*/
 
 
 
