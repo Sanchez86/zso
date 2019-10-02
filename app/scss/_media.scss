@@ -3,6 +3,137 @@
 
 /*==========  Desktop First  ==========*/
 
+@media only screen and (max-width: 1400px){
+   .for-links a{
+      margin-left: 1vw;
+      margin-right: 1vw;
+   }
+}
+@media only screen and (max-width: 1300px){
+   .contact__bg2{
+      padding: 75px 30px;
+   }
+   .for-links a{
+      margin-left: 0vw;
+      margin-right: 0vw;
+   }
+}
+@media only screen and (max-width: 1200px){
+    .navbar .navbar-nav .nav-link {
+      padding-right: .4rem;
+      padding-left: .4rem;
+      font-size: 12px;
+   }
+}
+@media only screen and (max-width: 992px){
+   .ortoped__desc{
+      position: relative;
+   }
+   .footer__right{
+      margin-top: 50px;
+   }
+   .contact__right {
+      padding-left: 0;
+      padding-top: 50px;
+   }
+   .cube-wrap{
+      transform: scale(0.8);
+      transform-origin:  left;
+   }
+   .slider .block-for-arrows{
+      top:auto;
+      bottom: 100px;
+   }
+   .slider .carousel-indicators {
+      bottom: 160px;
+      left: 74px;
+   }
+   .description-product .product-images{
+      margin: 50px 0;
+   }
+}
+@media only screen and (max-width: 800px){
+   .carousel .owl-prev {
+      left: 0px;
+   }
+   .carousel .owl-next {
+      right: 0px;
+   }
+   .carousel .owl-next span, .carousel .owl-prev span{
+      width: 38px;
+      height: 38px;
+   }
+   .carousel .owl-nav{
+      z-index: 1;
+   }
+}
+@media only screen and (max-width: 767px){
+   .desc-1,
+   .desc-2{
+      padding-bottom: 65px;
+   }
+   .description-product .product-images{
+      padding-left: 0;
+      transform: scale(0.7);
+   }
+   .gallery__img_block{
+      margin-bottom: 20px;
+   }
+
+   .carousel .img-wrap {
+      height: 140px;
+   }
+
+   .gallery {
+      padding-top: 95px;
+   }
+   .footer__center{
+      margin: 50px 0 0 0;
+   }
+   .slider .carousel-item {
+      height: 500px;
+   }
+   .slider .block-for-arrows{
+      bottom: 20px;
+   }
+   .cube-wrap{
+      transform: scale(0.6);
+   }
+   .slider .carousel-control-next, .slider .carousel-control-prev{
+      width: 50px;
+      height: 50px;
+   }
+   .slider .carousel-indicators {
+      bottom: 11px;
+      left: 55px;
+   }
+}
+@media only screen and (max-width: 600px){
+   .header-other-page h3{
+      font-size: 28px;
+   }
+   .cube-wrap{
+      transform: scale(0.5);
+      transform-origin: left top;
+      margin-top: 20px;
+      position: relative;
+      left: -60px;
+   }
+   .slider .carousel-indicators {
+      bottom: 58px;
+      left: -35px;
+   }
+}
+@media only screen and (max-width: 376px){
+   .cube-wrap {
+      left: -84px;
+   }
+}
+@media only screen and (width: 320px){
+   .cube-wrap {
+      left: -100px;
+   }
+}
 // ≥1200px
 @include media-breakpoint-down(lg) {
    /*.container {

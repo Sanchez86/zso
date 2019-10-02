@@ -142,7 +142,18 @@ nav .for-links .active a:after{
 header{
 
 }/*header*/
-
+.navbar {
+	button{
+		outline: 0;
+		span{
+			display: block;
+			width: 40px;
+			height: 2px;
+			background-color: $text-blue;
+			margin-bottom: 8px;
+		}
+	}
+}
 nav.fixed-top{
 	background-color: rgba(255, 255, 255, 0.58);
 	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.16);
@@ -655,7 +666,7 @@ nav.fixed-top.active{
    }
    &__bg2{
       background-color: rgba(255, 255, 255, 0.71);
-      padding: 75px 0;
+      padding: 75px 145px;
 	   border-bottom: 3px solid $text-blue;
    }
    .form{
@@ -706,6 +717,15 @@ nav.fixed-top.active{
 			   color:$text-blue;
 			   cursor: pointer;
 		   }
+	   }
+	   .submit[disabled="disabled"]{
+		   opacity: .5;
+	   }
+	   .submit[disabled="disabled"]:hover{
+		   background-color: $text-blue;
+		   color:$white;
+		   border: 1px solid $text-blue;
+		   cursor: default;
 	   }
    }
 	&__p{
