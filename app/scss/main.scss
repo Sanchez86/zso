@@ -824,8 +824,7 @@ nav.fixed-top.active{
 		font-size: 18px;
 		max-width: 100%;
 	}
-	&__img{
-		width: 100%;
+	.img-after-header{
 		margin-top: 87px;
 		margin-bottom: 105px;
 	}
@@ -971,13 +970,12 @@ nav.fixed-top.active{
 /*---End--orthopedics-----*/
 
 /*footwear*/
+.img-after-header{
+	margin-top: 202px;
+	width: 100%;
+}
+
 .footwear{
-	&__img{
-		margin-top: 202px;
-		img{
-			width: 100%;
-		}
-	}
 	.blue-section{
 		h4{
 			margin-top: 30px;
@@ -987,6 +985,18 @@ nav.fixed-top.active{
 	}
 }
 /*end footwear*/
+
+/*corsets*/
+.corsets{
+	.wrap-blue-text{
+		margin-top: 177px;
+		.zaklady__blue-text{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+/*end corsets*/
 
 
 
