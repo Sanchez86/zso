@@ -136,7 +136,7 @@ h6{
 		}
 	}
 }
-.for-links .active a:after{
+nav .for-links .active a:after{
 	width: 100%;
 }
 header{
@@ -968,18 +968,33 @@ nav.fixed-top.active{
 .dp-modify{
 	padding-bottom: 134px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*---End--orthopedics-----*/
+
+/*footwear*/
+.footwear{
+	&__img{
+		margin-top: 202px;
+		img{
+			width: 100%;
+		}
+	}
+	.blue-section{
+		h4{
+			margin-top: 30px;
+			margin-bottom: 0;
+			text-align: center;
+		}
+	}
+}
+/*end footwear*/
+
+
+
+
+
+
+
+
+
+
 @import "media"; // Always at the end
