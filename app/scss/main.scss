@@ -194,7 +194,7 @@ nav.fixed-top.active{
 		color: $white;
 		text-align: center;
 		opacity: 1;
-		border: 1px solid $white;
+		border: 1px solid #f00;
 		width: 70px;
 		height: 70px;
 		border-radius: 50%;
@@ -204,10 +204,10 @@ nav.fixed-top.active{
 		transition: opacity .3s;
 	}
 	.carousel-control-next{
-		background-image: url("../img/_src/arrow-right.png");
+		background-image: url("../img/_src/arrow-right-red.png");
 	}
 	.carousel-control-prev{
-		background-image: url("../img/_src/arrow-left.png");
+		background-image: url("../img/_src/arrow-left-red.png");
 	}
 	.carousel-control-next:hover,
 	.carousel-control-prev:hover{
@@ -245,7 +245,7 @@ nav.fixed-top.active{
 	}
 	&__decor{
 		position: absolute;
-		border: 7px solid $white;
+		border: 7px solid #f00;
 		width: 283px;
 		height: 360px;
 		left: 113px;
@@ -256,6 +256,7 @@ nav.fixed-top.active{
 		animation-timing-function: ease-in-out;
 		animation-duration: 1s;
 	}
+
 	@keyframes for-decor {
 		0%{
 			transform: rotateY(90deg);
@@ -285,14 +286,22 @@ nav.fixed-top.active{
 			border-radius: 100%;
 			margin-left: 7px;
 			background-color: rgba(0, 0, 0, 0);
-			border: 1px solid $text-blue;
+			border: 1px solid #f00;
 		}
 		li.active{
-			background-color: $text-blue;
+			background-color: #f00;
 			width: 9px;
 			height: 9px;
 			position: relative;
 			top: -1px;
+		}
+		li:hover{
+			cursor: pointer;
+			transform: scale(1.2);
+		}
+		li.active:hover{
+			cursor: pointer;
+			transform: scale(1);
 		}
 	}
 
@@ -555,7 +564,7 @@ nav.fixed-top.active{
           display: block;
           text-align: center;
           opacity: .5;
-          border: 1px solid $text-blue;
+          border: 1px solid #f00;
           width: 70px;
           height: 70px;
           border-radius: 50%;
@@ -567,13 +576,13 @@ nav.fixed-top.active{
 	.owl-prev{
 		left: -109px;
        span{
-          background-image: url('../img/_src/arrow-left-blue.png');
+          background-image: url('../img/_src/arrow-left-red.png');
        }
 	}
 	.owl-next{
 		right: -109px;
        span{
-          background-image: url('../img/_src/arrow-right-blue.png');
+          background-image: url('../img/_src/arrow-right-red.png');
        }
 	}
 
