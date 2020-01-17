@@ -623,23 +623,14 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="footer__right">
-                        <div id="map"></div>
+                        <div id="map">
+                            <img src="img/_src/map.png" height="741"></div>
                     </div>
                 </div>
             </div>
         </div>
 	</footer>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_IBHA6ueGmqntKei4Lphk2ezfY_S0OGg&callback=initMap"  async defer></script>
 
-    <script>
-        var map;
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 51.090593, lng: 17.013974},
-                zoom: 9
-            });
-        }
-    </script>
     <script src="libs/jquery/dist/jquery.min.js"></script>
 	<script src="libs/bootstrap/bootstrap.min.js"></script>
 	<script src="libs/owl/owl.carousel.min.js" defer></script>

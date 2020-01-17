@@ -55,7 +55,7 @@ body {
 	right: 20px;
 	width: 50px;
 	height: 50px;
-	background-color: $text-blue;
+	background-color: #F00;
 	text-align: center;
 	border: 1px solid $white;
 	transition: .5s;
@@ -447,7 +447,7 @@ nav.fixed-top.active{
 		.img:nth-child(1){
 			width: 244px;
 			height: 360px;
-			border: 6px solid $text-blue;
+			border: 6px solid #F00;
 			img{
 				top:0;
 				bottom:0;
@@ -456,13 +456,14 @@ nav.fixed-top.active{
 				margin: auto;
 			}
 		}
+
 		.img:nth-child(2){
 			width: 244px;
 			height: 251px;
 			position: relative;
 			left: -4px;
 			top: 195px;
-			background-color: $text-blue;
+			background-color: #F00;
 			img{
 				bottom:0;
 				left: 0;
@@ -475,7 +476,7 @@ nav.fixed-top.active{
           height: 182px;
           position: relative;
           top: 11px;
-          border: 6px solid $text-blue;
+          border: 6px solid #F00;
           img{
              bottom:0;
              left: 0;
@@ -632,7 +633,7 @@ nav.fixed-top.active{
    &__hover{
       opacity: 0;
       transition: opacity 0.5s;
-      border: 6px solid $text-blue;
+      border: 6px solid #F00;
       background-color: rgba(255, 255, 255, 0.8);
       position: absolute;
       z-index: 1;
@@ -677,7 +678,7 @@ nav.fixed-top.active{
    &__bg2{
       background-color: rgba(255, 255, 255, 0.71);
       padding: 75px 145px;
-	   border-bottom: 3px solid $text-blue;
+	   border-bottom: 3px solid #F00;
    }
    .form{
       &__name,
@@ -1051,8 +1052,10 @@ nav.fixed-top.active{
 
 
 #map{
-	width: 100%;
-	height: 300px;
+	img{
+		width: 100%;
+		height: 300px;
+	}
 }
 
 
